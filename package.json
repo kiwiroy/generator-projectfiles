@@ -1,10 +1,10 @@
 {
-  "name": "generator-readme",
+  "name": "generator-projectfiles",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Yeoman OSS Project Files generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "codeinchaos/generator-readme",
+  "repository": "codeinchaos/generator-projectfiles",
   "author": {
     "name": "Code in Chaos",
     "email": "contact@codeinchaos.com",

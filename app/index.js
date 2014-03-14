@@ -5,7 +5,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 
 
-var ReadmeGenerator = yeoman.generators.Base.extend({
+var ProjectfilesGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
 
@@ -23,7 +23,7 @@ var ReadmeGenerator = yeoman.generators.Base.extend({
     this.log(this.yeoman);
 
     // replace it with a short and sweet description of your generator
-    this.log(chalk.magenta('You\'re using the fantastic Readme generator.'));
+    this.log(chalk.magenta('You\'re using the fantastic Projectfiles generator.'));
 
     var prompts = [{
       type: 'confirm',
@@ -40,17 +40,13 @@ var ReadmeGenerator = yeoman.generators.Base.extend({
   },
 
   app: function () {
-    this.mkdir('app');
-    this.mkdir('app/templates');
-
-    this.copy('_package.json', 'package.json');
-    this.copy('_bower.json', 'bower.json');
+    //this.copy('_package.json', 'package.json');
   },
 
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
-    this.copy('jshintrc', '.jshintrc');
+    //this.copy('jshintrc', '.jshintrc');
   }
 });
 
-module.exports = ReadmeGenerator;
+module.exports = ProjectfilesGenerator;

@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-readme' ]; then cd .. && eval "mv $currentfolder generator-readme" && cd generator-readme; fi
+  - if [ "$currentfolder" != 'generator-projectfiles' ]; then cd .. && eval "mv $currentfolder generator-projectfiles" && cd generator-projectfiles; fi
 
