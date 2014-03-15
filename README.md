@@ -39,7 +39,7 @@ mkdir my-new-oss-project && cd $_
 Run yo projectfiles, and answer the prompts
 
 ```bash
-yo angular-fullstack [app-name]
+yo projectfiles
 ```
 
 Then run any of the [provided generators](#generators) to create the corresponding file.
