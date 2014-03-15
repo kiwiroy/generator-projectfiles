@@ -1,1 +1,1 @@
-Copyright <%= year %> <%= config.author.name %>
+Copyright <%= year %> <%= config.author.name %>. <%= config.author.url %>
