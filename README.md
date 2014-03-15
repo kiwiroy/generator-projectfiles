@@ -15,7 +15,6 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 - [Quick start](#quick-start)
 - [Documentation](#documentation)
 - [Bugs and feature requests](#bugs-and-feature-requests)
-- [Compiling](#compiling)
 - [Contributing](#contributing)
 - [Contribute and Earn](#contribute-and-earn)
 - [Donating](#donating)
@@ -52,22 +51,6 @@ Refer to the [Wiki](wiki) for detailed API documentation.
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
-
-## Compiling [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
-**generator-projectfiles** uses [Grunt](http://gruntjs.com/). If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
-
-### Available Grunt commands
-
-| Function  | Command       | Description                                   |
-| --------- | ------------- | --------------------------------------------- |
-| Build     | `grunt`       | Run `grunt` to run tests locally and compile. |
-| Tests     | `grunt test`  | Runs tests.                                   |
-| Watch     | `grunt watch` | This is a convenience method for watching.    |
-
-### Troubleshooting dependencies
-
-Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
 
 ## Contributing
 
