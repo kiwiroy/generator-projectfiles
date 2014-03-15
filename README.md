@@ -37,11 +37,13 @@ Available generators:
 
 ### Typical workflow
 
+```bash
 yo projectfiles # generates the base configuration and stores under `.projectfiles`
 yo projectfiles:readme
 yo projectfiles:license
 yo projectfiles:contributing
 yo projectfiles:editorconfig
+```
 
 ## Documentation
 
