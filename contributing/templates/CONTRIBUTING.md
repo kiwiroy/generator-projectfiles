@@ -11,9 +11,9 @@ patches and features.
 
 ## Using the issue tracker
 
-The issue tracker is the preferred channel for [bug reports](#bugs),
-[features requests](#features) and [submitting pull
-requests](#pull-requests), but please respect the following restrictions:
+The [issue tracker](issues) is the preferred channel for [bug reports](#bug-reports),
+[features requests](#feature-requests) and [submitting pull requests](#pull-requests), 
+but please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests (use
   [Stack Overflow](http://stackoverflow.com) or IRC).
@@ -21,8 +21,6 @@ requests](#pull-requests), but please respect the following restrictions:
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
 
-
-<a name="bugs"></a>
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
@@ -64,7 +62,6 @@ Example:
 > merits).
 
 
-<a name="features"></a>
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
@@ -73,7 +70,6 @@ case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
 
-<a name="pull-requests"></a>
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
