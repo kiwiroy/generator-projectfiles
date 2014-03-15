@@ -13,6 +13,7 @@ describe('projectfiles generator', function () {
       this.app = helpers.createGenerator('projectfiles:app', [
         '../../app'
       ]);
+
       done();
     }.bind(this));
   });
@@ -20,14 +21,19 @@ describe('projectfiles generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      '.jshintrc',
-      '.editorconfig'
+      '.projectfiles'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': true
+      'name': 'NAME',
+      'description': 'DESCRIPTION',
+      'license': 'LICENSE',
+      'repository': 'REPOSITORY',
+      'authorName': 'AUTHOR NAME',
+      'authorEmail': 'AUTHOR EMAIL',
+      'authorURL': 'AUTHOR URL'
     });
-    this.app.options['skip-install'] = true;
+
     this.app.run({}, function () {
       helpers.assertFile(expected);
       done();
