@@ -16,7 +16,7 @@
     "readme.md",
     "contributing.md",
     "editorconfig",
-    "license",
+    "license"
   ],
   "main": "app/index.js",
   "files": [
