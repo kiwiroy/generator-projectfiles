@@ -6,9 +6,9 @@
   "main": "app/index.js",
   "repository": "codeinchaos/generator-projectfiles",
   "author": {
-    "name": "Code in Chaos",
-    "email": "contact@codeinchaos.com",
-    "url": "https://github.com/codeinchaos"
+    "name": "Ahmad Nassri",
+    "email": "ahmad@codeinchaos.com",
+    "url": "http://ahmadnassri.com"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -17,14 +17,17 @@
     "test": "mocha"
   },
   "files": [
-    "app"
+    "app",
+    "contributing",
+    "editorconfig",
+    "license",
+    "readme"
   ],
   "keywords": [
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
-    "chalk": "~0.4.0"
+    "yeoman-generator": "~0.16.0"
   },
   "devDependencies": {
     "mocha": "*"
