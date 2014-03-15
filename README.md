@@ -1,47 +1,95 @@
-# generator-projectfiles [![Build Status](https://secure.travis-ci.org/codeinchaos/generator-projectfiles.png?branch=master)](https://travis-ci.org/codeinchaos/generator-projectfiles)
+# generator-projectfiles
 
-> [Yeoman](http://yeoman.io) generator
+Yeoman generator for standard OSS project files
 
 
-## Getting Started
+## Table of contents
 
-### What is Yeoman?
+- [Documentation](#documentation)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Compiling](#compiling)
+- [Contributing](#contributing)
+- [Donating](#donating)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
 
-Trick question. It's not a thing. It's this guy:
 
-![](http://i.imgur.com/JHaAlBJ.png)
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
+## Documentation
 
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+Refer to the [Wiki](wiki) for detailed API documentation.
 
-```
-$ npm install -g yo
-```
 
-### Yeoman Generators
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+## Bugs and feature requests
 
-To install generator-projectfiles from npm, run:
+Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
 
-```
-$ npm install -g generator-projectfiles
-```
 
-Finally, initiate the generator:
 
-```
-$ yo projectfiles
-```
+## Compiling [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-### Getting To Know Yeoman
+chrome.sockets.tcp.xhr uses [Grunt](http://gruntjs.com/). If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+### Available Grunt commands
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+| Function  | Command       | Description                                   |
+| --------- | ------------- | --------------------------------------------- |
+| Build     | `grunt`       | Run `grunt` to run tests locally and compile. |
+| Tests     | `grunt test`  | Runs tests.                                   |
+| Watch     | `grunt watch` | This is a convenience method for watching.    |
+
+### Troubleshooting dependencies
+
+Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
+
+
+
+## Contributing
+
+Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+
+More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests.
+
+Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+
+
+
+## Donating
+
+Donations are welcome to help support the continuous development of this project.
+
+
+
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, chrome.sockets.tcp.xhr is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
+
+Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+- Breaking backward compatibility **bumps the major** while resetting minor and patch
+- New additions without breaking backward compatibility **bumps the minor** while resetting the patch
+- Bug fixes and misc changes **bumps only the patch**
+
+For more information on SemVer, please visit <http://semver.org/>.
+
+
+
+## Authors
+
+**Ahmad Nassri**
+
+- Website: [http://ahmadnassri.com](http://ahmadnassri.com)
+
 
 
 ## License
 
-MIT
+Licensed under [MIT](LICENSE).
+
