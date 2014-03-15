@@ -6,6 +6,7 @@ var yeoman = require('yeoman-generator');
 
 var config = path.join(process.cwd(), '.projectfiles');
 
+// inspired by https://github.com/necolas/issue-guidelines
 var ContributingGenerator = yeoman.generators.Base.extend({
   init: function () {
     if (!fs.existsSync(config)) {

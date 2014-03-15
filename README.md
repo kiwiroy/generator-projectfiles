@@ -9,7 +9,6 @@
 
 Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTING.md`, `LICENSE`, `EditorConfig` and more!
 
-
 ## Table of contents
 
 - [Quick start](#quick-start)
@@ -25,14 +24,66 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 
 ## Quick Start
 
+Install `generator-projectfiles`:
+
+```bash
+npm install -g generator-projectfiles
+```
+
+Make a new directory, and cd into it:
+
+```bash
+mkdir my-new-oss-project && cd $_
+```
+
+Run yo projectfiles, and answer the prompts
+
+```bash
+yo angular-fullstack [app-name]
+```
+
+Then run any of the [provided generators](#generators) to create the corresponding file.
+
 ### Generators
 
 Available generators:
 
-- projectfiles:readme
-- projectfiles:license
-- projectfiles:contributing
-- projectfiles:editorconfig
+- [projectfiles:readme](#readme-generator)
+- [projectfiles:license](#license-generator)
+- [projectfiles:contributing](#contributing-generator)
+- [projectfiles:editorconfig](#editorconfig-generator)
+
+#### readme generator
+
+Generates a `README.md` file, with prompts for customization
+
+```bash
+yo projectfiles:readme
+```
+
+#### license generator
+
+Generates a `LICENSE` file, will prompt for a list of [popular OSS Licenses](http://choosealicense.com/licenses/)
+
+```bash
+yo projectfiles:license
+```
+
+#### contributing generator
+
+Generates a `CONTRIBUTING.md` file - *inspired by [@necolas/issue-guidelines](https://github.com/necolas/issue-guidelines)*
+
+```bash
+yo projectfiles:contributing
+```
+
+#### editorconfig generator
+
+Generates an `.editorconfig` file, with prompts for customization
+
+```bash
+yo projectfiles:editorconfig
+```
 
 ### Typical workflow
 
