@@ -40,8 +40,6 @@ var ProjectfilesGenerator = yeoman.generators.Base.extend({
         this[x] = props[x];
       }
 
-      console.log(props);
-
       done();
     }.bind(this));
   },
