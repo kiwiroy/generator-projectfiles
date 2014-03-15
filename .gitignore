@@ -1,2 +1,7 @@
-node_modules/
-temp/
+# npm
+npm-debug.log
+
+# Folders to ignore
+node_modules
+node_modules
+temp
