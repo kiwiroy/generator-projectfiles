@@ -36,7 +36,7 @@ Make a new directory, and cd into it:
 mkdir my-new-oss-project && cd $_
 ```
 
-Run yo projectfiles, and answer the prompts
+Run `yo projectfiles`, and answer the prompts
 
 ```bash
 yo projectfiles
