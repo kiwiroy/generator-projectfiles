@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0-alpha",
   "name": "generator-projectfiles",
   "description": "Yeoman OSS Project Files generator",
   "author": "Ahmad Nassri <ahmad@codeinchaos.com> (http://ahmadnassri.com)",
@@ -12,7 +12,11 @@
     "url": "https://github.com/codeinchaos/generator-projectfiles/issues"
   },
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "readme.md",
+    "contributing.md",
+    "editorconfig",
+    "license",
   ],
   "main": "app/index.js",
   "files": [

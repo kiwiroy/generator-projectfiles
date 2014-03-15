@@ -1,4 +1,4 @@
-# generator-projectfiles ![GitHub version][github-image]
+# OSS Project Files Generator ![GitHub version][github-image]
 
 [![Build Status][travis-image]][travis-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
@@ -7,7 +7,7 @@
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Total views][sourcegraph-image]][sourcegraph-url]
 
-Yeoman generator for standard OSS project files
+Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTING.md`, `LICENSE`, 'EditorConfig' and more!
 
 
 ## Table of contents
