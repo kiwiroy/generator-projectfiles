@@ -2,7 +2,6 @@
 var util = require('util');
 var yeoman = require('yeoman-generator');
 
-
 var EditorconfigGenerator = yeoman.generators.Base.extend({
   init: function () {
     var done = this.async();

@@ -96,11 +96,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/<%= repository %>
+   git clone https://github.com/<your-username>/<repo-name>
    # Navigate to the newly cloned directory
-   cd <%= repository %>
+   cd <repo-name>
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/<%= username %>/<%= repository %>
+   git remote add upstream <%= config.repository %>
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

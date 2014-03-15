@@ -1,10 +1,21 @@
 'use strict';
+var fs = require('fs');
 var util = require('util');
+var path = require('path');
 var yeoman = require('yeoman-generator');
 
+var config = path.join(process.cwd(), '.projectfiles');
 
 var LicenseGenerator = yeoman.generators.Base.extend({
   init: function () {
+    if (!fs.existsSync(config)) {
+      throw new Error('could not find `.projectfiles` in working directory, please initiate with `yo projectfiles`');
+    }
+
+    this.config = JSON.parse(fs.readFileSync(config));
+  },
+
+  askFor: function () {
     var done = this.async();
 
     // source: http://choosealicense.com/licenses/
@@ -12,6 +23,7 @@ var LicenseGenerator = yeoman.generators.Base.extend({
       type: 'list',
       name: 'license',
       message: 'Choose an OSS license',
+      default: this.config.license,
       choices: [{
         name: 'No License',
         value: 'NO-LICENSE'
@@ -55,22 +67,23 @@ var LicenseGenerator = yeoman.generators.Base.extend({
         name: 'Public Domain Dedication',
         value: 'CC0-1.0'
       }]
-    },{
-      name: 'fullname',
-      message: 'What\'s your full name?'
     }];
 
     this.prompt(prompts, function (props) {
       this.file = props.license;
-      this.fullname = props.fullname;
       this.year = new Date().getFullYear();
+
+      this.config.license = props.license;
+
+      // TODO: beautify output to keep it consistent
+      fs.writeFile(config, JSON.stringify(this.config));
 
       done();
     }.bind(this));
   },
 
   files: function () {
-    this.copy(this.file, 'LICENSE');
+    this.template(this.file, 'LICENSE');
   }
 });
 

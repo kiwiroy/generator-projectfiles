@@ -1,26 +1,18 @@
 'use strict';
+var fs = require('fs');
 var util = require('util');
+var path = require('path');
 var yeoman = require('yeoman-generator');
 
+var config = path.join(process.cwd(), '.projectfiles');
 
 var ContributingGenerator = yeoman.generators.Base.extend({
   init: function () {
-    var done = this.async();
+    if (!fs.existsSync(config)) {
+      throw new Error('could not find `.projectfiles` in working directory, please initiate with `yo projectfiles`');
+    }
 
-    var prompts = [{
-      name: 'username',
-      message: 'Would you mind telling me your username on GitHub?'
-    },{
-      name: 'repository',
-      message: 'Would you mind telling me your project name on GitHub?'
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.username = props.username;
-      this.repository = props.repository;
-
-      done();
-    }.bind(this));
+    this.config = JSON.parse(fs.readFileSync(config));
   },
 
   files: function () {

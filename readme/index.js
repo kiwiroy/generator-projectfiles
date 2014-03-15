@@ -4,16 +4,15 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 
+var config = path.join(process.cwd(), '.projectfiles');
 
 var ReadmeGenerator = yeoman.generators.Base.extend({
   init: function () {
-    var config = path.join(process.cwd(), '.projectfiles');
-
     if (!fs.existsSync(config)) {
       throw new Error('could not find `.projectfiles` in working directory, please initiate with `yo projectfiles`');
     }
 
-    this.config = JSON.parse(this.readFileAsString(config));
+    this.config = JSON.parse(fs.readFileSync(config));
   },
 
   askFor: function () {
@@ -70,8 +69,6 @@ var ReadmeGenerator = yeoman.generators.Base.extend({
       for (var x in props) {
         this[x] = props[x];
       }
-
-      console.log(props);
 
       done();
     }.bind(this));
