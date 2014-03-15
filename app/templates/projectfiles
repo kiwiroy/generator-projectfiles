@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "license": "<%= license %>",
+  "repository": "<%= repository %>",
+  "author": {
+    "name": "<%= authorName %>",
+    "email": "<%= authorEmail %>",
+    "url": "<%= authorURL %>"
+  }
+}

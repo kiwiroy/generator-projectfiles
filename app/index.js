@@ -1,51 +1,53 @@
 'use strict';
 var util = require('util');
-var path = require('path');
 var yeoman = require('yeoman-generator');
-var chalk = require('chalk');
-
 
 var ProjectfilesGenerator = yeoman.generators.Base.extend({
   init: function () {
-    this.pkg = require('../package.json');
-
-    this.on('end', function () {
-      if (!this.options['skip-install']) {
-        this.installDependencies();
-      }
-    });
-  },
-
-  askFor: function () {
     var done = this.async();
 
-    // have Yeoman greet the user
-    this.log(this.yeoman);
-
-    // replace it with a short and sweet description of your generator
-    this.log(chalk.magenta('You\'re using the fantastic Projectfiles generator.'));
-
     var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
+      // TODO: validation | required
+      name: 'name',
+      message: 'Project Name'
+    },{
+      // TODO: validation | optional
+      name: 'description',
+      message: 'Project Description'
+    },{
+      // TODO: link with license subgenerator
+      name: 'license',
+      message: 'License'
+    },{
+      // TODO: validation | uri
+      name: 'repository',
+      message: 'Repository URL'
+    },{
+      name: 'authorName',
+      message: 'Author Name'
+    },{
+      // TODO: validation | email
+      name: 'authorEmail',
+      message: 'Author Email'
+    },{
+      // TODO: validation | url
+      name: 'authorURL',
+      message: 'Author URL'
     }];
 
     this.prompt(prompts, function (props) {
-      this.someOption = props.someOption;
+      for (var x in props) {
+        this[x] = props[x];
+      }
+
+      console.log(props);
 
       done();
     }.bind(this));
   },
 
-  app: function () {
-    //this.copy('_package.json', 'package.json');
-  },
-
-  projectfiles: function () {
-    this.copy('editorconfig', '.editorconfig');
-    //this.copy('jshintrc', '.jshintrc');
+  saveConfig: function () {
+    this.template('projectfiles', '.projectfiles');
   }
 });
 
