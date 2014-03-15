@@ -130,5 +130,5 @@ Licensed under [the MIT license](LICENSE).
 [gittip-image]: http://img.shields.io/gittip/ahmadnassri.svg
 [paypal-url]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS
 [paypal-image]: http://img.shields.io/badge/PayPal-Donate-green.svg
-[tip4commit-url]: http://tip4commit.com/projects/639
-[tip4commit-image]: http://tip4commit.com/projects/639.svg
+[tip4commit-url]: http://tip4commit.com/projects/642
+[tip4commit-image]: http://tip4commit.com/projects/642.svg
