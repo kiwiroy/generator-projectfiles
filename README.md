@@ -12,6 +12,7 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 ## Table of contents
 
 - [Quick start](#quick-start)
+- [Change Log](#changelog)
 - [Documentation](#documentation)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
@@ -85,6 +86,10 @@ Generates an `.editorconfig` file, with prompts for customization
 yo projectfiles:editorconfig
 ```
 
+
+## Change Log
+refer to the [releases](releases) section for a detailed ChangeLog
+
 ## Documentation
 
 Refer to the [Wiki](wiki) for detailed API documentation.
@@ -125,7 +130,7 @@ Keep track of development and updates.
 
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, generator-projectfiles is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, this project is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
 
 Releases will be numbered with the following format:
 

@@ -3,6 +3,7 @@
   "name": "generator-projectfiles",
   "description": "Yeoman OSS Project Files generator",
   "author": "Ahmad Nassri <ahmad@codeinchaos.com> (http://ahmadnassri.com)",
+  "homepage": "https://www.npmjs.org/package/generator-projectfiles",
   "license": "MIT",
   "repository": {
     "type": "git",

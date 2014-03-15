@@ -1,51 +1,41 @@
 # <%= config.name %>
 
 <%= config.description %>
-
 <% if (toc) { %>
 ## Table of contents
-
 <% if (documentation) { %>- [Documentation](#documentation)<% } %>
 <% if (bugs) { %>- [Bugs and feature requests](#bugs-and-feature-requests)<% } %>
-<% if (grunt) { %>- [Compiling](#compiling)<% } %>
+<% if (grunt) { %>- [Compiling](#compiling-)<% } %>
 <% if (contributing) { %>- [Contributing](#contributing)<% } %>
 <% if (donating) { %>- [Donating](#donating)<% } %>
 <% if (semver) { %>- [Versioning](#versioning)<% } %>
 <% if (authors) { %>- [Authors](#authors)<% } %>
 <% if (license) { %>- [License](#license)<% } %>
-<% } %>
-
-<% if (documentation) { %>
+<% } %><% if (documentation) { %>
 ## Documentation
 
-Refer to the [Wiki](wiki) for detailed API documentation.
-<% } %>
-
-<% if (bugs) { %>
+Refer to the [Wiki](<%= config.wiki %>) for detailed API documentation.
+<% } %><% if (bugs) { %>
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
-<% } %>
-
-<% if (grunt) { %>
+Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](<%= config.issues %>).
+<% } %><% if (grunt) { %>
 ## Compiling [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-chrome.sockets.tcp.xhr uses [Grunt](http://gruntjs.com/). If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
+This project uses [Grunt](http://gruntjs.com/). If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
 ### Available Grunt commands
 
 | Function  | Command       | Description                                   |
 | --------- | ------------- | --------------------------------------------- |
-| Build     | `grunt`       | Run `grunt` to run tests locally and compile. |
+| Build     | `grunt`       | Compiles.                                     |
 | Tests     | `grunt test`  | Runs tests.                                   |
 | Watch     | `grunt watch` | This is a convenience method for watching.    |
 
 ### Troubleshooting dependencies
 
 Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
-<% } %>
-
-<% if (contributing) { %>
+<% } %><% if (contributing) { %>
 ## Contributing
 
 Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
@@ -53,19 +43,14 @@ Please read through our [contributing guidelines](CONTRIBUTING.md). Included are
 More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests.
 
 Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-<% } %>
-
-<% if (donating) { %>
+<% } %><% if (donating) { %>
 ## Donating
 
 Donations are welcome to help support the continuous development of this project.
-
-<% } %>
-
-<% if (semver) { %>
+<% } %><% if (semver) { %>
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, chrome.sockets.tcp.xhr is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, this project is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
 
 Releases will be numbered with the following format:
 
@@ -78,17 +63,13 @@ And constructed with the following guidelines:
 - Bug fixes and misc changes **bumps only the patch**
 
 For more information on SemVer, please visit <http://semver.org/>.
-<% } %>
-
-<% if (authors) { %>
+<% } %><% if (authors) { %>
 ## Authors
 
 **<%= config.author.name %>**
 
 - Website: [<%= config.author.url %>](<%= config.author.url %>)
-<% } %>
-
-<% if (license) { %>
+<% } %><% if (license) { %>
 ## License
 
 Licensed under [<%= config.license %>](LICENSE).
