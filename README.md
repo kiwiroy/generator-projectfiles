@@ -85,16 +85,6 @@ Generates an `.editorconfig` file, with prompts for customization
 yo projectfiles:editorconfig
 ```
 
-### Typical workflow
-
-```bash
-yo projectfiles # generates the base configuration and stores under `.projectfiles`
-yo projectfiles:readme
-yo projectfiles:license
-yo projectfiles:contributing
-yo projectfiles:editorconfig
-```
-
 ## Documentation
 
 Refer to the [Wiki](wiki) for detailed API documentation.
