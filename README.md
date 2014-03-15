@@ -7,7 +7,7 @@
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Total views][sourcegraph-image]][sourcegraph-url]
 
-Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTING.md`, `LICENSE`, 'EditorConfig' and more!
+Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTING.md`, `LICENSE`, `EditorConfig` and more!
 
 
 ## Table of contents
