@@ -12,6 +12,7 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 
 ## Table of contents
 
+- [Quick start](#quick-start)
 - [Documentation](#documentation)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Compiling](#compiling)
@@ -22,6 +23,25 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 - [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
+
+## Quick Start
+
+### Generators
+
+Available generators:
+
+- projectfiles:readme
+- projectfiles:license
+- projectfiles:contributing
+- projectfiles:editorconfig
+
+### Typical workflow
+
+yo projectfiles # generates the base configuration and stores under `.projectfiles`
+yo projectfiles:readme
+yo projectfiles:license
+yo projectfiles:contributing
+yo projectfiles:editorconfig
 
 ## Documentation
 
