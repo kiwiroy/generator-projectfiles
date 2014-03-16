@@ -25,7 +25,7 @@ Yeoman generator for standard OSS project files such as `README.md`, `CONTRIBUTI
 
 ## Quick Start
 
-Install `generator-projectfiles`:
+Install `generator-projectfiles` with [NPM](http://npmjs.org) [![NPM version][npm-image]][npm-url]:
 
 ```bash
 npm install -g generator-projectfiles
